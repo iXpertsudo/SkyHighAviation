@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyHigh Aviation</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+    <link rel="icon" href="Images/Aviation.png">
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url("Images/Blue Sky with Clouds and Sun - Poster.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* INTRO SECTION */
+        .intro-section{
+            background: linear-gradient(135deg, #0d6efd, #6610f2);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin: 30px auto;
+            max-width: 1000px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+        .intro-section h1{
+            font-size: 3rem;
+            font-style: italic;
+            font-weight: 700;
+            margin-bottom: 20px;
+            animation: fadeInDown 1s ease;
+        }
+        .intro-section p{
+            font-size: 1.3rem;
+            line-height: 1.7;
+            max-width: 800px;
+            margin: 0 auto 20px auto;
+            animation: fadeInUp 1.2s ease;
+        }
+
+        /* CAROUSEL */
+        .carousel-container {
+            max-width: 1000px;
+            margin: 50px auto;   /* centers the carousel with space */
+        }
+        .carousel-item img {
+            width: 100%;
+            height: 1000px;       /* fixed height, you can adjust */
+            object-fit: cover;   /* keeps image proportion */
+        }
+
+        /* Carousel caption */
+        .carousel-caption {
+            background-color: rgba(0,0,0,0.5); /* semi-transparent background */
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .carousel-caption h5 {
+            font-size: 2rem;
+            font-weight: 600;
+        }
+        .carousel-caption p {
+            font-size: 1.2rem;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            0% { opacity: 0; transform: translateY(-50px);}
+            100% { opacity: 1; transform: translateY(0);}
+        }
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(50px);}
+            100% { opacity: 1; transform: translateY(0);}
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- INTRO SECTION -->
+<div class="intro-section">
+    <h1>Welcome to SkyHigh Aviation</h1>
+    <p>
+        Step into the world of aviation where innovation meets adventure!
+        From modern commercial jets to historic aircraft that shaped flight, SkyHigh Aviation takes you on an exciting journey across the skies.
+        Explore cutting-edge aviation technology, learn about the history of flight, and see how airplanes continue to connect the world.
+        Whether you're a future pilot, aviation enthusiast, or just love the thrill of flying, this is your gateway to the wonders of the air.
+    </p>
+</div>
+
+<!-- CAROUSEL SECTION -->
+<div class="carousel-container">
+    <div id="aviationCarousel" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#aviationCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#aviationCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#aviationCarousel" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#aviationCarousel" data-bs-slide-to="3"></button>
+            <button type="button" data-bs-target="#aviationCarousel" data-bs-slide-to="4"></button>
+        </div>
+
+        <!-- Slides -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Images/download (10).jpg" alt="Modern Jets">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Modern Jets</h5>
+                    <p>Experience the speed, comfort, and elegance of modern commercial airplanes.</p>
+                    <a href="#" class="btn btn-warning text-dark">Learn More</a>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="Images/download (11).jpg" alt="Historic Aircraft">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Historic Aircraft</h5>
+                    <p>Step back in time and discover vintage airplanes that changed aviation history.</p>
+                    <a href="#" class="btn btn-warning text-dark">Learn More</a>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="Images/Gulfstream%20G700.jpg" alt="Flight Innovations">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Flight Innovations</h5>
+                    <p>Explore cutting-edge technology in aviation and aerospace engineering.</p>
+                    <a href="#" class="btn btn-warning text-dark">Learn More</a>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="Images/Patty%20Wagstaff%20to%20Honor%20Greg%20Connell%20by%20Flying%20in%20Aviation%20Expo%20—%20Airshow%20News.jpg" alt="Aerobatic Displays">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Aerobatic Displays</h5>
+                    <p>Marvel at incredible aerobatic stunts and precision flying at airshows worldwide.</p>
+                    <a href="#" class="btn btn-warning text-dark">Learn More</a>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="Images/The%20Future%20of%20Aviation_%20A%20Review%20of%20the%20Latest%20eVTOL%20Designs%20and%20Technologies.jpg" alt="Future Aircraft">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Future Aircraft</h5>
+                    <p>Get a glimpse of futuristic aircraft designs and sustainable aviation innovation.</p>
+                    <a href="#" class="btn btn-warning text-dark">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#aviationCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#aviationCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
